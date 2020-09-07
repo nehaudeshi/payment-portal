@@ -46,18 +46,22 @@ const App = () => {
       <div className="container mt-5">
         <div className="card text-center table-responsive">
           <table>
-            <tr>
-              <th>Name</th>
-              <th>Invoice Date</th>
-              <th>Invoice ID</th>
-              <th>Invoice Amount</th>
-            </tr>
-            <tr>
-              <td>{accDetails.name }</td>
-              <td>{accDetails.date ? accDetails.date.getDate() + "/" + (accDetails.date.getMonth()+1) + "/" + accDetails.date.getFullYear() : null}</td>
-              <td>{accDetails.invoiceId}</td>
-              <td>INR {accDetails.invoiceAmt}</td>
-            </tr>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Invoice Date</th>
+                <th>Invoice ID</th>
+                <th>Invoice Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{accDetails.name }</td>
+                <td>{accDetails.date ? accDetails.date.getDate() + "/" + (accDetails.date.getMonth()+1) + "/" + accDetails.date.getFullYear() : null}</td>
+                <td>{accDetails.invoiceId}</td>
+                <td>INR {accDetails.invoiceAmt}</td>
+              </tr>
+            </tbody>
           </table>
         </div>
         <div className="container">

@@ -12,7 +12,6 @@ const Card = (props) => {
 
     const onSubmit = (event) => {
         event.preventDefault()
-        console.log(props)
         var body = {
             "entity": "event",
             "account_id": props.account.accId,
@@ -126,11 +125,11 @@ const Card = (props) => {
         </div>
         <div className="form-group col-9">
             <label>Card Number</label>
-            <input className="form-control" id="cardNumber" type="text" maxlength="16" required/>
+            <input className="form-control" id="cardNumber" type="text" maxLength="16" required/>
         </div>
         <div className="form-group col-3 p-r-0">
             <label>CVV</label>
-            <input className="form-control" id="cvv" type="text" maxlength="4" required/>
+            <input className="form-control" id="cvv" type="text" maxLength="4" required/>
         </div>
         <div className="col-12">
         <label className="col-form-label p-t-0">Expiration Date</label>
